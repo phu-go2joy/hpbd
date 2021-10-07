@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home-page">
     <div class="card">
       <div class="back"></div>
       <div class="front">
@@ -11,7 +11,7 @@
         </div>
       </div>
       <div class="text-container">
-        <p id="head">Happy Birthday அத்தான்!</p>
+        <p id="head">Happy Birthday "Sếp"!</p>
         <p>
           I hope your special day will bring you lots of happiness, love, and
           fun. You deserve them a lot. Enjoy!
@@ -19,44 +19,9 @@
         <p>Hope your day goes great!</p>
       </div>
     </div>
-    <!-- <div class="card">
-      <div class="back"></div>
-      <div class="front">
-        <div class="imgset">
-          <img
-            width="100%"
-            src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png"
-          />
-        </div>
-      </div>
-      <div class="text-container">
-        <p id="head">Happy Birthday அத்தான்!</p>
-        <p>
-          I hope your special day will bring you lots of happiness, love, and
-          fun. You deserve them a lot. Enjoy!
-        </p>
-        <p>Hope your day goes great!</p>
-      </div>
+    <div>
+      <button @click="$router.push('/about')">go to about</button>
     </div>
-    <div class="card">
-      <div class="back"></div>
-      <div class="front">
-        <div class="imgset">
-          <img
-            width="100%"
-            src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png"
-          />
-        </div>
-      </div>
-      <div class="text-container">
-        <p id="head">Happy Birthday அத்தான்!</p>
-        <p>
-          I hope your special day will bring you lots of happiness, love, and
-          fun. You deserve them a lot. Enjoy!
-        </p>
-        <p>Hope your day goes great!</p>
-      </div>
-    </div> -->
   </div>
 </template>
 
@@ -86,13 +51,33 @@ export default {
 //   background-repeat: no-repeat;
 //   background-attachment: fixed;
 // }
-
+.home-page {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  // height: 100vh;
+  //   background-image: linear-gradient(
+  //     to right top,
+  //     #1f0537,
+  //     #380c60,
+  //     #55108c,
+  //     #7413bb,
+  //     #fd6500
+  //   );
+  //   height: 100%;
+  //   margin: 0;
+  //   background-repeat: no-repeat;
+  //   background-attachment: fixed;
+}
 .card {
   position: relative;
   width: 300px;
   height: 425px;
   border: 10px solid #fd6500;
-  margin: 60px auto 0 auto;
+  margin: 00px auto 0 auto;
   box-shadow: inset 10px 0px 15px 0px rgba(0, 0, 0, 0.1);
   background-image: linear-gradient(
       to bottom,
